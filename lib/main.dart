@@ -5,7 +5,6 @@ void main() {
 }
 
 class DiamondApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,16 +14,27 @@ class DiamondApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey,
         ),
         backgroundColor: Colors.blueGrey,
-        body:
-              Column(
-                children: [
-                  SizedBox(height: 50,),
-                  Center(child: Image.asset('images/diamond.png',height: 250, ),),
-                  SizedBox(height: 50,),
-                  Text('Buy Me', style: TextStyle(fontSize: 25, color: Colors.white),),
-
-                ],
+        body: Column(
+          children: [
+            SizedBox(
+              height: 50,
+            ),
+            Center(
+              child: Image.asset(
+                'images/diamond.png',
+                height: 250,
               ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Text(
+              'Buy Me',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 25, color: Colors.white),
+            ),
+          ],
+        ),
       ),
     );
   }
