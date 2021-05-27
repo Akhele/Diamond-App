@@ -16,8 +16,15 @@ class DiamondApp extends StatelessWidget {
         ),
         backgroundColor: Colors.blueGrey,
         body:
-        Text('tt')
-        ,
+              Column(
+                children: [
+                  SizedBox(height: 50,),
+                  Center(child: Image.asset('images/diamond.png',height: 250, ),),
+                  SizedBox(height: 50,),
+                  Text('Buy Me', style: TextStyle(fontSize: 25, color: Colors.white),),
+
+                ],
+              ),
       ),
     );
   }
